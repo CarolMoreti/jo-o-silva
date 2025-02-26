@@ -4,27 +4,78 @@
     padding:0;
     box-sizing: border-box;
 }
-::root{
+:root{
     --primary:#97EDAA;
     --secundary:#fff;
     --background:#0B0B0B;
 }
-
+body{
+    background: var(--background);
+}
 .logo{
     font-family:"Fira Code";
     font-size:24px;
     font-weight:400;
     color:var(--primary);
 }
-.title{
+.title, .title-big{
     font-family:"Archivo";
     font-size:32px;
     font-weight:400;
     color:var(--primary);
+}
+.title-big{
+    font-size: 48px;
 }
 span{
     font-family:"Archivo";
     font-size:20px;
     color:var(--primary);
 }
-
+p{
+    font-family:"Archivo";
+    font-size:24px;
+    color:var(--secundary);
+    font-weight: 400;
+}
+p .box-title{
+    font-size: 32px;
+}
+a{
+    text-decoration: none;
+    font-family:"Archivo";
+    font-size:20px;
+    color:var(--secundary);
+    font-weight: 400;
+}
+.button, .button2{
+    align-items: center;
+    padding: 10px 40px;
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+    background-color: #97EDAA;
+    color: var(--background);
+}
+.button2{
+    background-color: var(--background);
+    color:var(--primary) ;
+}
+.box-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 38px 40px;
+    border: 1ps solid #1f1f1f;
+    background-color: #101010;
+    box-shadow: 0 1px var(--primary);
+}
+.hab-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 48px;
+    border: 1ps solid #1f1f1f;
+    background-color: #101010;
+}
